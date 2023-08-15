@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { getPosts } from './api/routes';
+import classes from './page.module.css'
 
 
 
@@ -23,7 +24,7 @@ const page =  () => {
                                   {" "}
                                   <span className="mr-2">{item.id}.</span>
                                   <Link
-                                    className="hover:text-blue-400 capitalize"
+                                    className={classes.blogTitle}
                                     href={{ pathname: `/blogs/post` ,
                                    query:{postId: item.id}
                                     }}

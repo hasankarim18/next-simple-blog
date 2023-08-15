@@ -1,0 +1,12 @@
+
+.postTitle{
+    @apply text-xl font-bold;
+}
+
+.postContent{
+    @apply text-indigo-700;
+}
+
+.postId{
+    @apply bg-indigo-400 p-2 rounded-xl;
+}

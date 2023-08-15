@@ -1,0 +1,3 @@
+.blogTitle{
+   @apply hover:text-blue-400 capitalize;
+}
