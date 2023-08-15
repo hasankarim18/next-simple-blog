@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import posts from '../../../data/blogData.json'
 import classes from './page.module.css';
+import * as moment from "moment";
 
 // const getSinglePost = async (postId)=> {
 //     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`);
@@ -45,7 +46,11 @@ const Page = ({ searchParams }) => {
             <strong>Detail:</strong> {post.content}
           </p>
         </div>
-        <div className="flex justify-end w-full">
+        <div className={classes.blogInfo}>
+          <div>
+            Publish Date:
+            <span className={classes.date}> {moment(post.date).format("DD-MMM-YYYY")}</span>
+          </div>
           <div className={classes.postId}>
             <span className="capitalize">user Id</span>:{post.userId}
           </div>

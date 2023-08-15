@@ -10,3 +10,11 @@
 .postId{
     @apply bg-indigo-400 p-2 rounded-xl;
 }
+
+.blogInfo{
+    @apply flex justify-between mt-4 border pt-2 border-transparent border-t-slate-200;
+}
+
+.date{
+    @apply ml-2 text-violet-600; 
+}
