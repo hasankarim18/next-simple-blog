@@ -9,6 +9,7 @@ const getPosts = async ()=> {
 }
 
 const page = async () => {
+  
     const posts = await getPosts()
   
 
@@ -25,9 +26,9 @@ const page = async () => {
                                   {" "}
                                   <span className="mr-2">{item.id}.</span>
                                   <Link
-                                    className="hover:text-red-400"
-                                    href={{ pathname: `/blogs/${item.id}` ,
-                                  //   query:{blogId: item.id}
+                                    className="hover:text-blue-400 capitalize"
+                                    href={{ pathname: `/blogs/post` ,
+                                   query:{postId: item.id}
                                     }}
                                   >
                                     {item.title}{" "}

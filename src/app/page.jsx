@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <main className="">    
       <div className="container mx-auto">
-        <h1 className="text-3xl">Next Simple Blog build in </h1>
+        <h1 className="text-3xl text-center m-8">
+          Welcome to the most simple blog!!!
+        </h1>
       </div>
     </main>
   );
