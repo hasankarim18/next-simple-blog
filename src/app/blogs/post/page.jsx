@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import posts from '../../../data/blogData.json'
 
 // const getSinglePost = async (postId)=> {
 //     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`);
@@ -9,31 +10,28 @@ import React, { useEffect, useState } from 'react';
 // }
 
 const Page = ({ searchParams }) => {
-    const [post, setPost] = useState({})
+   // const [post, setPost] = useState({})
      const { postId } = searchParams;
 
-    useEffect(() => {
-      fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
-      .then(res => res.json())
-      .then(data => {
-        setPost(data)
-      })
-    }, [postId])
-    
-   
- 
+    // useEffect(() => {
+    //   fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     setPost(data)
+    //   })
+    // }, [postId])
+
+    const post = posts.find(post => post.id === parseInt(postId))
+  
   return (
     <div className="container mx-auto">
-     
-      <div className="p-4">
+       <div className="p-4">
         <div className="text-sm breadcrumbs">
           <ul>
             <li>
-              <Link href={'/blogs'} >Blogs</Link>
+              <Link href={"/blogs"}>Blogs</Link>
             </li>
-            <li>
-             Post-{postId}
-            </li>           
+            <li>Post-{postId}</li>
           </ul>
         </div>
         <h3 className="text-xl font-bold ">
@@ -41,7 +39,7 @@ const Page = ({ searchParams }) => {
         </h3>
         <div>
           <p className="mt-4">
-            <strong>Detail:</strong> {post.body}
+            <strong>Detail:</strong> {post.content}
           </p>
         </div>
         <div className="flex justify-end w-full">
@@ -49,7 +47,7 @@ const Page = ({ searchParams }) => {
             <span className="capitalize">user Id</span>:{post.userId}
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

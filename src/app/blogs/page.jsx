@@ -1,16 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
+import { getPosts } from './api/routes';
 
-const getPosts = async ()=> {
-    const url = "https://jsonplaceholder.typicode.com/posts?_limit=10";
-    const res = await fetch(url)
-    const data = await res.json()
-    return data 
-}
 
-const page = async () => {
+
+
+const page =  () => {
   
-    const posts = await getPosts()
+    const posts =  getPosts()
   
 
     return (

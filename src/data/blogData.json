@@ -1,0 +1,72 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "Introduction to Artificial Intelligence",
+    "content": "Artificial Intelligence (AI) is a rapidly evolving field that focuses on creating computer systems capable of intelligent behavior...",
+    "date": "2023-08-15"
+  },
+  {
+    "userId": 2,
+    "id": 2,
+    "title": "Exploring the Wonders of Space Travel",
+    "content": "Space travel has captured the human imagination for generations. From the historic moon landing to the potential of interplanetary colonization...",
+    "date": "2023-08-16"
+  },
+  {
+    "userId": 3,
+    "id": 3,
+    "title": "The Benefits of Regular Exercise",
+    "content": "Engaging in regular exercise offers a wide range of physical and mental benefits. From improving cardiovascular health to reducing stress...",
+    "date": "2023-08-17"
+  },
+  {
+    "userId": 4,
+    "id": 4,
+    "title": "Delicious and Nutritious: A Guide to Healthy Eating",
+    "content": "Maintaining a balanced and nutritious diet is essential for overall well-being. Discover tips for incorporating more fruits, vegetables, and whole foods into your meals...",
+    "date": "2023-08-18"
+  },
+  {
+    "userId": 5,
+    "id": 5,
+    "title": "The Art of Photography: Capturing Moments in Time",
+    "content": "Photography is a powerful medium that allows us to freeze moments in time and convey emotions, stories, and beauty through images...",
+    "date": "2023-08-19"
+  },
+  {
+    "userId": 6,
+    "id": 6,
+    "title": "Exploring Ancient Civilizations: Unraveling the Past",
+    "content": "The study of ancient civilizations offers valuable insights into the history of humanity. From the pyramids of Egypt to the mysteries of Mesopotamia...",
+    "date": "2023-08-20"
+  },
+  {
+    "userId": 7,
+    "id": 7,
+    "title": "Mastering the Art of Productivity",
+    "content": "Productivity is a skill that can greatly impact personal and professional success. Learn about effective time management, goal setting, and prioritization...",
+    "date": "2023-08-21"
+  },
+  {
+    "userId": 8,
+    "id": 8,
+    "title": "The Magic of Music: How It Influences Our Emotions",
+    "content": "Music has the remarkable ability to evoke powerful emotions and shape our moods. Explore the science behind music's impact on the human brain...",
+    "date": "2023-08-22"
+  },
+  {
+    "userId": 9,
+    "id": 9,
+    "title": "Environmental Conservation: Preserving Our Planet's Future",
+    "content": "The need for environmental conservation has never been more urgent. Discover the importance of sustainable practices, conservation efforts, and renewable energy sources...",
+    "date": "2023-08-23"
+  },
+  {
+    "userId": 10,
+    "id": 10,
+    "title": "The Evolution of Social Media: Shaping Modern Communication",
+    "content": "Social media platforms have revolutionized the way we communicate and connect with others. Explore the history, impact, and potential of social media in today's digital age...",
+    "date": "2023-08-24"
+  }
+]
