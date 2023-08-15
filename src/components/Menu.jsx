@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 const Menu = () => {
     const pathName = usePathname()
-    console.log(pathName);
+  
     return (
       <div className="container mx-auto">
         <div className="navbar bg-base-100">
@@ -29,11 +29,11 @@ const Menu = () => {
               <li>
                 <Link
                   className={`font-bold text-xl ${
-                    pathName === "/blog" ? "bg-slate-200" : ""
+                    pathName === "/blogs" ? "bg-slate-200" : ""
                   } `}
-                  href={"/blog"}
+                  href={"/blogs"}
                 >
-                  Blog{" "}
+                  Blogs{" "}
                 </Link>
               </li>
               {/* <li>
